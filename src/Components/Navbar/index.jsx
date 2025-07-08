@@ -1,101 +1,101 @@
 import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-    const activeStyle = 'underline underline-offset-4'
-    return (
+  const activeStyle = 'underline underline-offset-4'
 
-    <nav className='flex justify-between items-center fixed z-10 w-full py-5 px-8 text-sm font-light'>
-    <ul className='flex items-center gap-3'>
+  return (
+    <nav className='flex justify-between items-center fixed z-10 top-0 w-full py-5 px-8 text-sm font-light'>
+      <ul className='flex items-center gap-3'>
         <li className='font-semibold text-lg'>
-        <NavLink to='/'>
+          <NavLink to='/'>
             Shopi
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-        <NavLink
+          <NavLink
             to='/'
             className={({ isActive }) =>
-            isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             All
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-        <NavLink
+          <NavLink
             to='/clothes'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             Clothes
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-            <NavLink
+          <NavLink
             to='/electronics'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             Electronics
-            </NavLink>
+          </NavLink>
         </li>
         <li>
-            <NavLink
+          <NavLink
             to='/furnitures'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             Furnitures
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-        <NavLink
+          <NavLink
             to='/toys'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             Toys
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-        <NavLink
+          <NavLink
             to='/others'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             Others
-        </NavLink>
+          </NavLink>
         </li>
-    </ul>
-    <ul className='flex items-center gap-3'>
+      </ul>
+      <ul className='flex items-center gap-3'>
         <li className='text-black/60'>
-            correofalso@gmail.com
+          teff@platzi.com
         </li>
         <li>
-        <NavLink
+          <NavLink
             to='/my-orders'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             My Orders
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-        <NavLink
+          <NavLink
             to='/my-account'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             My Account
-        </NavLink>
+          </NavLink>
         </li>
         <li>
-        <NavLink
+          <NavLink
             to='/sing-in'
             className={({ isActive }) =>
-                isActive ? activeStyle : undefined
+              isActive ? activeStyle : undefined
             }>
             Sign In
-        </NavLink>
+          </NavLink>
         </li>
         <li>
           🛒 0
