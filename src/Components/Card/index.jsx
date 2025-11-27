@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { PlusIcon } from '@heroicons/react/24/solid' 
+import { PlusIcon } from '@heroicons/react/24/solid'
 import { ShoppingCartContext } from '../Context'
 const Card = (data) => {
   const context = useContext(ShoppingCartContext)
@@ -15,11 +15,10 @@ const Card = (data) => {
     context.setCartProducts([...context.cartProducts, productData])
     context.openCheckoutSideMenu()
     context.closeProductDetail()
-    console.log('CART:', context.cartProducts)
   }
 
   return (
-    <div 
+    <div
       className='bg-white cursor-pointer w-56 h-60 rounded-lg'
       onClick={()=> showProduct(data.data)}>
       <figure className='relative mb-2 w-full h-4/5'>
